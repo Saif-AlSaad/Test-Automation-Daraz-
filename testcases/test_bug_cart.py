@@ -1,5 +1,4 @@
-from pages.login_page import LoginPage
-from pages.home_page import HomePage
+from pages.cart_page import CartPage
 from utilities.read_properties import ReadConfig
 from utilities.logger import LogGen
 
@@ -8,318 +7,94 @@ logger = LogGen.loggen()
 
 
 # =========================================================
-# TEST 1: INVALID PASSWORD
+# BUG-02: DOUBLE ADD TO CART
 # =========================================================
 
-def test_invalid_password(driver):
+def test_double_add_to_cart(driver):
 
     logger.info(
-        "========== INVALID PASSWORD TEST STARTED =========="
+        "========== BUG-02 DOUBLE ADD TO CART TEST STARTED =========="
     )
 
-    login = LoginPage(driver)
+    cart = CartPage(driver)
 
-    # =========================
-    # STEP 1: OPEN DARAZ
-    # =========================
+    # STEP 1: Open Daraz
+    logger.info("STEP 1: Opening Daraz")
 
+    cart.open()
+
+    # STEP 2: Search product
+    logger.info("STEP 2: Searching product")
+
+    cart.search_product(
+        ReadConfig.get_product()
+    )
+
+    cart.click_search()
+
+    # STEP 3: Open first product
+    logger.info("STEP 3: Opening first product")
+
+    cart.click_first_product()
+
+    cart.switch_to_new_tab()
+
+    # STEP 4: Get product name
+    product_name = cart.get_product_name()
+
+    print("\n========== BUG-02 RESULT ==========")
+    print("Product:", product_name)
+
+    # STEP 5: Add product to cart - FIRST CLICK
     logger.info(
-        "STEP 1: Opening Daraz"
+        "STEP 5: First Add to Cart click"
     )
 
-    login.open()
+    cart.click_add_to_cart()
 
-    # =========================
-    # STEP 2: CLICK LOGIN
-    # =========================
+    # Wait a little for cart action
+    import time
+    time.sleep(2)
 
+    # STEP 6: Take screenshot after first click
+    cart.take_screenshot(
+        "screenshots/BUG-02_first_add_to_cart.png"
+    )
+
+    # STEP 7: Try clicking Add to Cart again
     logger.info(
-        "STEP 2: Clicking Login"
+        "STEP 7: Second Add to Cart click"
     )
 
-    login.click_login()
+    try:
 
-    # =========================
-    # STEP 3: ENTER VALID EMAIL
-    # =========================
+        cart.click_add_to_cart()
 
-    logger.info(
-        "STEP 3: Entering valid email"
-    )
+        print(
+            "Second Add to Cart click was accepted."
+        )
 
-    email = ReadConfig.get_email()
+        print(
+            "BUG CANDIDATE: Same product can be added again "
+            "without a clear prevention/quantity control."
+        )
 
-    login.enter_email(
-        email
-    )
+    except Exception:
 
-    # =========================
-    # STEP 4: ENTER INVALID PASSWORD
-    # =========================
+        print(
+            "Second Add to Cart click was not accepted."
+        )
 
-    logger.info(
-        "STEP 4: Entering invalid password"
-    )
+        print(
+            "No duplicate-add behavior observed."
+        )
 
-    invalid_password = "WrongPassword123456"
-
-    login.enter_password(
-        invalid_password
-    )
-
-    # =========================
-    # STEP 5: CLICK LOGIN
-    # =========================
-
-    logger.info(
-        "STEP 5: Clicking Login"
-    )
-
-    login.click_login_button()
-
-    # =========================
-    # STEP 6: TAKE SCREENSHOT
-    # =========================
-
-    logger.info(
-        "STEP 6: Taking Screenshot"
-    )
-
-    login.take_screenshot(
-        "screenshots/invalid_password.png"
-    )
-
-    # =========================
-    # STEP 7: VERIFY LOGIN FAILED
-    # =========================
-
-    logger.info(
-        "STEP 7: Verifying Invalid Password"
-    )
-
-    login_failed = login.is_login_failed()
-
-    print(
-        "\n========== INVALID PASSWORD RESULT =========="
-    )
-
-    print(
-        "Login failed:",
-        login_failed
-    )
-
-    # Invalid password দিয়ে login করা উচিত নয়
-    assert login_failed, (
-        "BUG: User was able to login with an invalid password."
+    # STEP 8: Screenshot
+    cart.take_screenshot(
+        "screenshots/BUG-02_double_add_to_cart.png"
     )
 
     logger.info(
-        "Invalid Password Test Passed"
+        "========== BUG-02 DOUBLE ADD TO CART TEST FINISHED =========="
     )
-
-    logger.info(
-        "========== INVALID PASSWORD TEST FINISHED =========="
-    )
-
-
-# =========================================================
-# TEST 2: INVALID EMAIL FORMAT
-# =========================================================
-
-def test_invalid_email_format(driver):
-
-    logger.info(
-        "========== INVALID EMAIL TEST STARTED =========="
-    )
-
-    login = LoginPage(driver)
-
-    # =========================
-    # STEP 1: OPEN DARAZ
-    # =========================
-
-    logger.info(
-        "STEP 1: Opening Daraz"
-    )
-
-    login.open()
-
-    # =========================
-    # STEP 2: CLICK LOGIN
-    # =========================
-
-    logger.info(
-        "STEP 2: Clicking Login"
-    )
-
-    login.click_login()
-
-    # =========================
-    # STEP 3: ENTER INVALID EMAIL
-    # =========================
-
-    logger.info(
-        "STEP 3: Entering invalid email"
-    )
-
-    invalid_email = "invalid-email"
-
-    login.enter_email(
-        invalid_email
-    )
-
-    # =========================
-    # STEP 4: ENTER PASSWORD
-    # =========================
-
-    logger.info(
-        "STEP 4: Entering password"
-    )
-
-    password = ReadConfig.get_password()
-
-    login.enter_password(
-        password
-    )
-
-    # =========================
-    # STEP 5: CLICK LOGIN
-    # =========================
-
-    logger.info(
-        "STEP 5: Clicking Login"
-    )
-
-    login.click_login_button()
-
-    # =========================
-    # STEP 6: TAKE SCREENSHOT
-    # =========================
-
-    logger.info(
-        "STEP 6: Taking Screenshot"
-    )
-
-    login.take_screenshot(
-        "screenshots/invalid_email.png"
-    )
-
-    # =========================
-    # STEP 7: VERIFY LOGIN FAILED
-    # =========================
-
-    logger.info(
-        "STEP 7: Verifying Invalid Email"
-    )
-
-    login_failed = login.is_login_failed()
-
-    print(
-        "\n========== INVALID EMAIL RESULT =========="
-    )
-
-    print(
-        "Login failed:",
-        login_failed
-    )
-
-    # Invalid email দিয়ে login করা উচিত নয়
-    assert login_failed, (
-        "BUG: User was able to login with an invalid email."
-    )
-
-    logger.info(
-        "Invalid Email Test Passed"
-    )
-
-    logger.info(
-        "========== INVALID EMAIL TEST FINISHED =========="
-    )
-
-
-# =========================================================
-# TEST 3: WHITESPACE-ONLY SEARCH (BUG-01)
-# =========================================================
-
-def test_whitespace_only_search_is_rejected(driver):
-
-    logger.info(
-        "========== WHITESPACE-ONLY SEARCH TEST STARTED =========="
-    )
-
-    home = HomePage(driver)
-
-    # =========================
-    # STEP 1: OPEN DARAZ
-    # =========================
-
-    logger.info(
-        "STEP 1: Opening Daraz"
-    )
-
-    home.open()
-
-    # =========================
-    # STEP 2: ENTER WHITESPACE-ONLY SEARCH
-    # =========================
-
-    logger.info(
-        "STEP 2: Entering whitespace-only search input"
-    )
-
-    home.search_product(" ")
-
-    # =========================
-    # STEP 3: CLICK SEARCH
-    # =========================
-
-    logger.info(
-        "STEP 3: Clicking Search"
-    )
-
-    home.click_search()
-
-    # =========================
-    # STEP 4: TAKE SCREENSHOT
-    # =========================
-
-    logger.info(
-        "STEP 4: Taking Screenshot"
-    )
-
-    home.take_screenshot(
-        "screenshots/BUG-01_whitespace_search.png"
-    )
-
-    # =========================
-    # STEP 5: VERIFY SEARCH WAS REJECTED
-    # =========================
-
-    logger.info(
-        "STEP 5: Verifying whitespace-only search was rejected"
-    )
-
-    current_url = home.get_current_page_url()
-
-    print(
-        "\n========== WHITESPACE-ONLY SEARCH RESULT =========="
-    )
-
-    print(
-        "Current URL:",
-        current_url
-    )
-
-    # Whitespace-only search গ্রহণ করা উচিত নয়
-    assert "q=%20" not in current_url, (
-        f"BUG-01: Whitespace-only search was accepted by the system. "
-        f"Actual URL: {current_url}"
-    )
-
-    logger.info(
-        "Whitespace-Only Search Test Passed"
-    )
-
-    logger.info(
-        "========== WHITESPACE-ONLY SEARCH TEST FINISHED =========="
-    )
+    

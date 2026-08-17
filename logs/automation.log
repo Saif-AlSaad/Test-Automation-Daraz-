@@ -2161,3 +2161,150 @@
 17-08-2026 07:40:19 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
 17-08-2026 07:40:30 PM | INFO | ====== WebDriver manager ======
 17-08-2026 07:40:31 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:56:07 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:56:07 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:56:08 PM | INFO | ========== INVALID PASSWORD TEST STARTED ==========
+17-08-2026 07:56:08 PM | INFO | STEP 1: Opening Daraz
+17-08-2026 07:56:14 PM | INFO | STEP 2: Clicking Login
+17-08-2026 07:56:14 PM | INFO | STEP 3: Entering valid email
+17-08-2026 07:56:14 PM | INFO | STEP 4: Entering invalid password
+17-08-2026 07:56:14 PM | INFO | STEP 5: Clicking Login
+17-08-2026 07:56:14 PM | INFO | STEP 6: Taking Screenshot
+17-08-2026 07:56:15 PM | INFO | STEP 7: Verifying Invalid Password
+17-08-2026 07:56:17 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:56:17 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:56:18 PM | INFO | ========== INVALID EMAIL TEST STARTED ==========
+17-08-2026 07:56:18 PM | INFO | STEP 1: Opening Daraz
+17-08-2026 07:56:33 PM | INFO | STEP 2: Clicking Login
+17-08-2026 07:56:34 PM | INFO | STEP 3: Entering invalid email
+17-08-2026 07:56:34 PM | INFO | STEP 4: Entering password
+17-08-2026 07:56:34 PM | INFO | STEP 5: Clicking Login
+17-08-2026 07:56:34 PM | INFO | STEP 6: Taking Screenshot
+17-08-2026 07:56:34 PM | INFO | STEP 7: Verifying Invalid Email
+17-08-2026 07:56:36 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:56:37 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:56:38 PM | INFO | ========== WHITESPACE-ONLY SEARCH TEST STARTED ==========
+17-08-2026 07:56:38 PM | INFO | STEP 1: Opening Daraz
+17-08-2026 07:56:42 PM | INFO | STEP 2: Entering whitespace-only search input
+17-08-2026 07:56:42 PM | INFO | STEP 3: Clicking Search
+17-08-2026 07:56:46 PM | INFO | STEP 4: Taking Screenshot
+17-08-2026 07:56:46 PM | INFO | STEP 5: Verifying whitespace-only search was rejected
+17-08-2026 07:56:49 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:56:49 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:56:50 PM | INFO | ========== Cart Test Started ==========
+17-08-2026 07:57:06 PM | INFO | ========== Cart Test Passed ==========
+17-08-2026 07:57:08 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:57:09 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:57:10 PM | INFO | ========== Login Test Started ==========
+17-08-2026 07:57:10 PM | INFO | Opening Daraz
+17-08-2026 07:57:14 PM | INFO | Click Login
+17-08-2026 07:57:14 PM | INFO | Entering Email
+17-08-2026 07:57:14 PM | INFO | Entering Password
+17-08-2026 07:57:14 PM | INFO | Click Login Button
+17-08-2026 07:57:14 PM | INFO | Taking Screenshot
+17-08-2026 07:57:15 PM | INFO | Login Successful
+17-08-2026 07:57:15 PM | INFO | ========== Login Test Passed ==========
+17-08-2026 07:57:17 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:57:17 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:57:18 PM | INFO | ========== Product Price Test Started ==========
+17-08-2026 07:57:38 PM | INFO | ========== Product Price Test Passed ==========
+17-08-2026 07:57:40 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:57:41 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:57:42 PM | INFO | ========== Search Test Started ==========
+17-08-2026 07:57:42 PM | INFO | Opening Daraz Website
+17-08-2026 07:57:47 PM | INFO | Searching Product: Laptop
+17-08-2026 07:57:47 PM | INFO | Clicking Search Button
+17-08-2026 07:57:52 PM | INFO | Opening First Product
+17-08-2026 07:57:54 PM | INFO | Getting Product Information
+17-08-2026 07:57:54 PM | INFO | Product Title : Dell Latitude 3300 Used Laptop - Intel Core i3 7th Gen - 4GB DDR4 RAM - 128GB Super Fast SSD - 13.3" HD Slim Display - Fresh Condition Laptop For Students & Office Work
+17-08-2026 07:57:54 PM | INFO | Product Price : \u09f3 17,500
+17-08-2026 07:57:54 PM | INFO | Product URL : https://www.daraz.com.bd/products/-i1587627904-s12695348532.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253ALaptop%253Bnid%253A1587627904%253Bsrc%253ALazadaMainSrp%253Brn%253A57969815767e6fd2bbf82c739c880d39%253Bregion%253Abd%253Bsku%253A1587627904_BD%253Bprice%253A17500%253Bclient%253Adesktop%253Bsupplier_id%253A700982880224%253Bsession_id%253A%253Bbiz_source%253Ahttps%253A%252F%252Fwww.daraz.com.bd%252F%253Bslot%253A0%253Butlog_bucket_id%253A470687%253Basc_category_id%253A57%253Bitem_id%253A1587627904%253Bsku_id%253A12695348532%253Bshop_id%253A755874%253BtemplateInfo%253A&freeshipping=0&fs_ab=1&fuse_fs=&lang=en&location=Dhaka&price=1.75E%204&priceCompare=skuId%3A12695348532%3Bsource%3Alazada-search-voucher%3Bsn%3A57969815767e6fd2bbf82c739c880d39%3BoriginPrice%3A1750000%3BdisplayPrice%3A1750000%3BisGray%3Afalse%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A0%3Btimestamp%3A1786975070612&ratingscore=&request_id=57969815767e6fd2bbf82c739c880d39&review=&sale=0&search=1&source=search&spm=a2a0e.searchlist.list.0&stock=1
+17-08-2026 07:57:55 PM | INFO | Search Test Passed
+17-08-2026 07:57:55 PM | INFO | ========== Search Test Finished ==========
+17-08-2026 07:57:55 PM | INFO | Getting Product Information
+17-08-2026 07:57:55 PM | INFO | Verifying Product Title
+17-08-2026 07:57:55 PM | INFO | Verifying Product Price
+17-08-2026 07:57:55 PM | INFO | Taking Screenshot
+17-08-2026 07:57:55 PM | INFO | ********** Test Passed **********
+17-08-2026 07:57:57 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:57:57 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 07:58:08 PM | INFO | ====== WebDriver manager ======
+17-08-2026 07:58:08 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:23:18 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:23:18 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:23:19 PM | INFO | ========== BUG-02 DOUBLE ADD TO CART TEST STARTED ==========
+17-08-2026 08:23:19 PM | INFO | STEP 1: Opening Daraz
+17-08-2026 08:23:25 PM | INFO | STEP 2: Searching product
+17-08-2026 08:23:28 PM | INFO | STEP 3: Opening first product
+17-08-2026 08:23:53 PM | INFO | STEP 5: First Add to Cart click
+17-08-2026 08:23:55 PM | INFO | STEP 7: Second Add to Cart click
+17-08-2026 08:23:56 PM | INFO | ========== BUG-02 DOUBLE ADD TO CART TEST FINISHED ==========
+17-08-2026 08:23:58 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:23:59 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:24:00 PM | INFO | ========== Cart Test Started ==========
+17-08-2026 08:24:24 PM | INFO | ========== Cart Test Passed ==========
+17-08-2026 08:24:27 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:24:27 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:24:28 PM | INFO | ========== Login Test Started ==========
+17-08-2026 08:24:28 PM | INFO | Opening Daraz
+17-08-2026 08:24:35 PM | INFO | Click Login
+17-08-2026 08:24:35 PM | INFO | Entering Email
+17-08-2026 08:24:35 PM | INFO | Entering Password
+17-08-2026 08:24:35 PM | INFO | Click Login Button
+17-08-2026 08:24:35 PM | INFO | Taking Screenshot
+17-08-2026 08:24:35 PM | INFO | Login Successful
+17-08-2026 08:24:35 PM | INFO | ========== Login Test Passed ==========
+17-08-2026 08:24:37 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:24:38 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:24:39 PM | INFO | ========== INVALID PASSWORD TEST STARTED ==========
+17-08-2026 08:24:39 PM | INFO | STEP 1: Opening Daraz
+17-08-2026 08:24:43 PM | INFO | STEP 2: Clicking Login
+17-08-2026 08:24:43 PM | INFO | STEP 3: Entering valid email
+17-08-2026 08:24:43 PM | INFO | STEP 4: Entering invalid password
+17-08-2026 08:24:43 PM | INFO | STEP 5: Clicking Login
+17-08-2026 08:24:43 PM | INFO | STEP 6: Taking Screenshot
+17-08-2026 08:24:43 PM | INFO | STEP 7: Verifying Invalid Password
+17-08-2026 08:24:46 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:24:46 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:24:47 PM | INFO | ========== INVALID EMAIL TEST STARTED ==========
+17-08-2026 08:24:47 PM | INFO | STEP 1: Opening Daraz
+17-08-2026 08:24:51 PM | INFO | STEP 2: Clicking Login
+17-08-2026 08:24:51 PM | INFO | STEP 3: Entering invalid email
+17-08-2026 08:24:51 PM | INFO | STEP 4: Entering password
+17-08-2026 08:24:51 PM | INFO | STEP 5: Clicking Login
+17-08-2026 08:24:51 PM | INFO | STEP 6: Taking Screenshot
+17-08-2026 08:24:51 PM | INFO | STEP 7: Verifying Invalid Email
+17-08-2026 08:24:54 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:24:54 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:24:55 PM | INFO | ========== WHITESPACE-ONLY SEARCH TEST STARTED ==========
+17-08-2026 08:24:55 PM | INFO | STEP 1: Opening Daraz
+17-08-2026 08:25:05 PM | INFO | STEP 2: Entering whitespace-only search input
+17-08-2026 08:25:06 PM | INFO | STEP 3: Clicking Search
+17-08-2026 08:25:10 PM | INFO | STEP 4: Taking Screenshot
+17-08-2026 08:25:11 PM | INFO | STEP 5: Verifying whitespace-only search was rejected
+17-08-2026 08:25:13 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:25:13 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:25:14 PM | INFO | ========== Product Price Test Started ==========
+17-08-2026 08:25:30 PM | INFO | ========== Product Price Test Passed ==========
+17-08-2026 08:25:32 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:25:33 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:25:34 PM | INFO | ========== Search Test Started ==========
+17-08-2026 08:25:34 PM | INFO | Opening Daraz Website
+17-08-2026 08:25:37 PM | INFO | Searching Product: Laptop
+17-08-2026 08:25:37 PM | INFO | Clicking Search Button
+17-08-2026 08:25:40 PM | INFO | Opening First Product
+17-08-2026 08:25:46 PM | INFO | Getting Product Information
+17-08-2026 08:25:46 PM | INFO | Product Title : Dell Latitude 3300 Used Laptop - Intel Core i3 7th Gen - 4GB DDR4 RAM - 128GB Super Fast SSD - 13.3" HD Slim Display - Fresh Condition Laptop For Students & Office Work
+17-08-2026 08:25:46 PM | INFO | Product Price : \u09f3 17,500
+17-08-2026 08:25:46 PM | INFO | Product URL : https://www.daraz.com.bd/products/-i1587627904-s12695348532.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253ALaptop%253Bnid%253A1587627904%253Bsrc%253ALazadaMainSrp%253Brn%253A4477ceef153d700a91c707bfcb85d50b%253Bregion%253Abd%253Bsku%253A1587627904_BD%253Bprice%253A17500%253Bclient%253Adesktop%253Bsupplier_id%253A700982880224%253Bsession_id%253A%253Bbiz_source%253Ahttps%253A%252F%252Fwww.daraz.com.bd%252F%253Bslot%253A0%253Butlog_bucket_id%253A470687%253Basc_category_id%253A57%253Bitem_id%253A1587627904%253Bsku_id%253A12695348532%253Bshop_id%253A755874%253BtemplateInfo%253A&freeshipping=0&fs_ab=1&fuse_fs=&lang=en&location=Dhaka&price=1.75E%204&priceCompare=skuId%3A12695348532%3Bsource%3Alazada-search-voucher%3Bsn%3A4477ceef153d700a91c707bfcb85d50b%3BoriginPrice%3A1750000%3BdisplayPrice%3A1750000%3BisGray%3Afalse%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A0%3Btimestamp%3A1786976738161&ratingscore=&request_id=4477ceef153d700a91c707bfcb85d50b&review=&sale=0&search=1&source=search&spm=a2a0e.searchlist.list.0&stock=1
+17-08-2026 08:25:46 PM | INFO | Search Test Passed
+17-08-2026 08:25:46 PM | INFO | ========== Search Test Finished ==========
+17-08-2026 08:25:46 PM | INFO | Getting Product Information
+17-08-2026 08:25:46 PM | INFO | Verifying Product Title
+17-08-2026 08:25:46 PM | INFO | Verifying Product Price
+17-08-2026 08:25:46 PM | INFO | Taking Screenshot
+17-08-2026 08:25:46 PM | INFO | ********** Test Passed **********
+17-08-2026 08:25:48 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:25:49 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
+17-08-2026 08:25:59 PM | INFO | ====== WebDriver manager ======
+17-08-2026 08:25:59 PM | INFO | Driver [C:\Users\Saif Al Saad\.wdm\drivers\chromedriver\win64\151.0.7922.138\chromedriver-win64/chromedriver.exe] found in cache by browser version
